@@ -55,8 +55,7 @@ const SellItem = () => {
   const [totalAmount, setTotalAmount] = useState(0);
   const [amount, setAmount] = useState(0);
   const [delTogle, setDelToggle] = useState(false);
-  const [itemSelect, setItemSelect] = useState("");
-  const [category, setCategory] = useState();
+
   const handleItem = (event) => {
     const selectItem = event.target.value;
     setItem(selectItem);
@@ -69,7 +68,7 @@ const SellItem = () => {
   };
   const bagItems = (e) => {
     // e.preventDefault();
-    if (quantity == 0 || quantity == "") {
+    if (quantity === 0 || quantity === "") {
       alert("Quantity should not be ( 0 ) or Empty");
       return;
     }

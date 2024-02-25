@@ -29,20 +29,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(name, category, quantity, rate) {
-  return { name, category, quantity, rate };
-}
-
-// const rows = [
-//   createData("Sand (Balu)", "super", "10 tellor", 2500),
-//   createData("Rod", "10 MM", "10 tan", 6500),
-//   createData("Rod", "12 MM", "15 tan", 7500),
-//   createData("Rod", "16 MM", "5 tan", 8500),
-//   createData("Rod", "20 MM", "1 tan", 8200),
-//   createData("Stone", " Small", "10 tan", 4500),
-//   createData("Stone", " medium", "12 tan", 5000),
-// ];
-
 const ViewsData = () => {
   const data = useSelector((state) => state.storeData);
   return (
