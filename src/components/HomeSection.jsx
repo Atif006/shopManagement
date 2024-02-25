@@ -1,17 +1,14 @@
 import styled from "@emotion/styled";
-import { Badge, Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { message } from "antd";
 import React from "react";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import { useSelector } from "react-redux";
+
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { AdminMenu, UserMenu } from "../data/SideBarMenu";
+
 import "../style/layout.css";
-import LogoutIcon from "@mui/icons-material/Logout";
+
 import Header from "./Header";
-import AddItem from "./AddItem";
-import ViewsData from "./ViewsData";
-// import headerpic from "./assets/headerpic.jpeg";
+
 const MainLayout = styled(Box)`
   padding: 5px;
   height: 98vh;
@@ -58,13 +55,7 @@ const BodyBox = styled(Box)`
   background: white;
   overflow-y: scroll;
 `;
-const LogoHeading = styled(Typography)`
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 20px 0px;
-  color:'white',
-  font-weight:500,
-`;
+
 const MenuItem = styled(Box)`
   margin-top: 30px;
   display: flex;
@@ -72,22 +63,13 @@ const MenuItem = styled(Box)`
 const LogOutSection = styled(Box)`
   padding-top: 10px;
 `;
-const HeaderContent = styled(Box)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 0px 20px;
-  height: 50px;
-`;
+
 const LogoPic = styled("img")({
   height: "70px",
   width: "100%",
 });
 const HomeSection = ({ children }) => {
-  // const { sellItem } = useSelector((state) => state.sellItem);
   const location = useLocation();
-  const navigate = useNavigate();
-  // console.log(sellItem);
 
   const logout = () => {
     localStorage.clear();
@@ -126,8 +108,6 @@ const HomeSection = ({ children }) => {
           <SideBarBox
             className="sideBar"
             sx={{
-              //   backgroundImage: "url('assets/sidebarpic.jpg')",
-              //   backgroundRepeat: "no-repeat",
               height: "99vh",
             }}
           >

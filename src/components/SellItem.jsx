@@ -18,7 +18,7 @@ import {
   TextField,
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import ViewsData from "./ViewsData";
+
 import HomeSection from "./HomeSection";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -53,7 +53,7 @@ const SellItem = () => {
   const [rates, setRates] = useState();
   const [quantity, setquantityValue] = useState("");
   const [totalAmount, setTotalAmount] = useState(0);
-  const [amount, setAmount] = useState(0);
+
   const [delTogle, setDelToggle] = useState(false);
 
   const handleItem = (event) => {
@@ -80,7 +80,7 @@ const SellItem = () => {
       amount: rates.rate * quantity,
     };
     let amount = rates.rate * quantity;
-    setAmount(amount);
+
     dispatch(addItems(cart));
     setquantityValue("");
     setDelToggle(!delTogle);

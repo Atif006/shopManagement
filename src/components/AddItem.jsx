@@ -1,6 +1,4 @@
-import styled from "@emotion/styled";
 import {
-  Box,
   Button,
   FormControl,
   Grid,
@@ -15,9 +13,6 @@ import HomeSection from "./HomeSection";
 const AddItem = () => {
   const [item, setItem] = useState("");
   const [category, setCategory] = useState();
-  const [quantity, setQuantity] = useState();
-  const [rate, setRate] = useState();
-  // const [age, setAge] = React.useState("");
 
   const handleItem = (event) => {
     setItem(event.target.value);

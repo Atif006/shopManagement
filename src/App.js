@@ -1,7 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./components/HomePage";
-import HomeSection from "./components/HomeSection";
 import AddItem from "./components/AddItem";
 import SellItem from "./components/SellItem";
 import ViewsData from "./components/ViewsData";
