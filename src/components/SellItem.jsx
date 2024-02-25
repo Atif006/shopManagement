@@ -79,7 +79,6 @@ const SellItem = () => {
       quantity: quantity,
       amount: rates.rate * quantity,
     };
-    let amount = rates.rate * quantity;
 
     dispatch(addItems(cart));
     setquantityValue("");
