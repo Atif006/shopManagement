@@ -10,7 +10,7 @@ const items = slideData.map((cdata) => {
       alt=""
       className=" cursor-pointer w-full h-[10rem]"
       role="presentation"
-      style={{ height: "22rem", width: "100%" }}
+      style={{ height: "22rem", width: "101%" }}
     />
   );
 });
