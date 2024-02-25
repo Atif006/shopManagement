@@ -92,8 +92,8 @@ const SellItem = () => {
     let amountValue = 0;
     cartItem?.map((item) => (amountValue += item.amount));
     setTotalAmount(amountValue);
-  }, [delTogle]);
-  console.log("cart Item : ", cartItem);
+  }, [delTogle, cartItem]);
+
   const makeBills = () => {
     dispatch(removeAllItems());
     setTotalAmount(0);
